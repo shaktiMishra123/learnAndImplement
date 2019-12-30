@@ -1,4 +1,4 @@
-package scrambleWordUseCase;
+package useCasesUsingFunctionalPrograming;
 
 import java.util.function.BiFunction;
 import java.util.function.BiPredicate;

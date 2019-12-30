@@ -1,4 +1,4 @@
-package scrambleWordUseCase;
+package useCasesUsingFunctionalPrograming.wordrepetition;
 
 import java.util.Scanner;
 import java.util.function.BiPredicate;
@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
-public class WordRepeatation {
+public class WordRepetition {
   static Predicate<String> checkIfStringIsMoreThanTwoChar = (stringValueToCompare) -> Stream.of(stringValueToCompare.split("")).distinct().count() == 2;
   static BiPredicate<Long, Long> checkIfFirstIsMultipleOfSecond = (firstCharCount, secondCharCount) -> firstCharCount * 2 == secondCharCount;
   //second character should be multiple of 2 of first Character return true otherwise false
@@ -23,6 +23,8 @@ public class WordRepeatation {
       long countOfSecondChar = Stream.of(stringToCompare.split("")).filter(word -> word.contains(secondChar)).count();
       System.out.println(checkIfFirstIsMultipleOfSecond.test(countOfFirstChar, countOfSecondChar));
     }
+    else
+      System.out.println(false);
   }
 
   private static boolean checkIfStringIsValidString(String stringToCompare) {

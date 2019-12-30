@@ -1,4 +1,4 @@
-package scrambleWordUseCase;
+package useCasesUsingFunctionalPrograming;
 
 import java.util.ArrayList;
 import java.util.Arrays;

@@ -1,11 +1,10 @@
-package scrambleWordUseCase;
+package useCasesUsingFunctionalPrograming;
 
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
 import java.util.function.BiPredicate;
 import java.util.function.Function;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class Scrambled {

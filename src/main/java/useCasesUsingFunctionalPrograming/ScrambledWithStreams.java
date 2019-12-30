@@ -1,8 +1,6 @@
-package scrambleWordUseCase;
+package useCasesUsingFunctionalPrograming;
 
-import java.time.format.DateTimeFormatter;
 import java.util.List;
-import java.util.function.BiFunction;
 import java.util.function.BiPredicate;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
