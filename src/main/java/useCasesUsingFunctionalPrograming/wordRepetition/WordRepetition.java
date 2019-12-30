@@ -1,4 +1,4 @@
-package useCasesUsingFunctionalPrograming.wordrepetition;
+package useCasesUsingFunctionalPrograming.wordRepetition;
 
 import java.util.Scanner;
 import java.util.function.BiPredicate;
