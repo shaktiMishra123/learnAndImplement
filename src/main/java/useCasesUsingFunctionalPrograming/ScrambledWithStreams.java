@@ -14,5 +14,4 @@ public class ScrambledWithStreams {
     List<String>  streamList1 = Stream.of(secondString.split("")).parallel().sorted().collect(Collectors.toList());
     System.out.println(biPredicate.test(streamList,streamList1));
   }
-
 }

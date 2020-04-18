@@ -3,7 +3,7 @@ package useCasesUsingFunctionalPrograming;
 import java.util.Arrays;
 import java.util.List;
 
-public class regexApacheBeam {
+public class Regexapachebeam {
   public static void main(String[] args) {
     String regex1 = "gs://india/sales/*";
     String regex2 = "gs://india/events/*";

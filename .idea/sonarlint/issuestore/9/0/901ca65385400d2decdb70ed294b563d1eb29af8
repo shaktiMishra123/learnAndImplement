@@ -1,0 +1,9 @@
+
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÃŠŒÌþÿÿÿÿ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ìœõ÷
+S	java:S106"9Replace this use of System.out or System.err by a logger.(‚Ù‚äøÿÿÿÿ
+T
+java:S1128">Remove this unused import 'com.sun.org.slf4j.internal.Logger'.(¢¤ÿ…
+S	java:S106)"9Replace this use of System.out or System.err by a logger.(±©÷Õýÿÿÿÿ
+K
+java:S1191"5Use classes from the Java API instead of Sun classes.(¢¤ÿ…

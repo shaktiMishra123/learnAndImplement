@@ -17,6 +17,7 @@ public class WordRepetition {
     String stringToCompare = sc.nextLine();
     boolean returnValue = checkIfStringIsValidString(stringToCompare);
     if (returnValue) {
+
       String firstChar = Stream.of(stringToCompare.split("")).distinct().collect(Collectors.toList()).get(0);
       String secondChar = Stream.of(stringToCompare.split("")).distinct().collect(Collectors.toList()).get(1);
       long countOfFirstChar = Stream.of(stringToCompare.split("")).filter(word -> word.contains(firstChar)).count();

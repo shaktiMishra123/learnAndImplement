@@ -1,0 +1,17 @@
+
+u
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦·İ"8Ğ¤ôÚ‘.
+Q
+java:S1611"/Remove the parentheses around the "s" parameter(èƒ¹ÿÿÿÿÿ8Ğ¤ôÚ‘.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ïòİ8Ğ¤ôÚ‘.
+s
+java:S4276"QRefactor this code to use the more specialised Functional Interface 'IntConsumer'(èƒ¹ÿÿÿÿÿ8Ğ¤ôÚ‘.
+u
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(ï–±j8Ğ¤ôÚ‘.
+o
+java:S4276"RRefactor this code to use the more specialised Functional Interface 'IntPredicate'(úÌ³Ù8Ğ¤ôÚ‘.
+L
+java:S1611"/Remove the parentheses around the "s" parameter(úÌ³Ù8Ğ¤ôÚ‘.
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜË¸÷8Ğ¤ôÚ‘.

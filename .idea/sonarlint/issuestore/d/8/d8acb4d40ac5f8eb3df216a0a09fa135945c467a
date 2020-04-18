@@ -1,0 +1,9 @@
+
+osquid:ModifiersOrderCheck"EReorder the modifiers to comply with the Java Language Specification.(±ß©¦þÿÿÿÿ
+osquid:S1602"SRemove useless curly braces around statement and then remove useless return keyword(±ß©¦þÿÿÿÿ
+`squid:S3358"DExtract this nested ternary operation into an independent statement.(Ú©ÿ·úÿÿÿÿ
+[squid:S3358"DExtract this nested ternary operation into an independent statement.(°åå÷
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(ÛÑÓâ
+O
+squid:S106"9Replace this use of System.out or System.err by a logger.(”¤ýñ

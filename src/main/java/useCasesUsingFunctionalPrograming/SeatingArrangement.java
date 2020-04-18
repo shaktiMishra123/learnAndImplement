@@ -1,12 +1,15 @@
 package useCasesUsingFunctionalPrograming;
 
+import com.sun.org.slf4j.internal.Logger;
+
 import java.util.Scanner;
 import java.util.function.*;
 
+
 public class SeatingArrangement {
-  static UnaryOperator<Integer> seatNumberForBerthType =  (selectedSeat) -> selectedSeat % 12;
-  static Predicate<Integer> caseWhenSeatSelectedIsZeroPredicate = (seatNo)  -> seatNo == 0;
-  static Consumer<Integer> caseWhenSeatSelectedIsZeroConsumer = (seatNo) -> {
+  static IntUnaryOperator seatNumberForBerthType =  selectedSeat -> selectedSeat % 12;
+  static IntPredicate caseWhenSeatSelectedIsZeroPredicate = seatNo  -> seatNo == 0;
+  static IntConsumer caseWhenSeatSelectedIsZeroConsumer = seatNo -> {
     if(caseWhenSeatSelectedIsZeroPredicate.test(seatNo)){
       System.out.println("Zero is not a valid seat number");
       System.exit(0);}
@@ -16,10 +19,10 @@ public class SeatingArrangement {
     Scanner sc=new Scanner(System.in);
     System.out.println("Enter Seat Number :");
     int seatNumber = sc.nextInt();
-    System.out.println(seatNumberForBerthType.apply(seatNumber));
+    System.out.println(seatNumberForBerthType.applyAsInt(seatNumber));
     caseWhenSeatSelectedIsZeroConsumer.accept(seatNumber);
     String seatAndBerth;
-    switch (seatNumberForBerthType.apply(seatNumber)){
+    switch (seatNumberForBerthType.applyAsInt(seatNumber)){
       case 0 :  seatAndBerth = seatNumber - 11 + ": WS";break;
       case 1 :  seatAndBerth = seatNumber + 11 + ": WS";break;
       case 2 :  seatAndBerth = seatNumber + 9 +  ": MS";break;

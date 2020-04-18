@@ -1,0 +1,22 @@
+
+o
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÜË¸÷
+s
+java:S1450
+"^Remove the "integerListZero" field and declare it as a local variable in the relevant methods.(ï–±j
+n
+java:S2293
+"YReplace the type specification in this constructor call with the diamond operator ("<>").(ï–±j
+h
+java:S4276"RRefactor this code to use the more specialised Functional Interface 'IntPredicate'(ä‰çñ
+J
+java:S1611"/Remove the parentheses around the "s" parameter(¤¶±üÿÿÿÿ
+m
+java:S4276"RRefactor this code to use the more specialised Functional Interface 'IntPredicate'(¤¶±üÿÿÿÿ
+n
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¦·İ"
+w
+java:S1450"aRemove the "integerListNonZero" field and declare it as a local variable in the relevant methods.(ÜË¸÷
+E
+java:S1611"/Remove the parentheses around the "s" parameter(ä‰çñ
+M	java:S106"9Replace this use of System.out or System.err by a logger.(ïòİ

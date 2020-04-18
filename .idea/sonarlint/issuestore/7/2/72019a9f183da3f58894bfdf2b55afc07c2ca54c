@@ -1,0 +1,22 @@
+
+U	java:S106&"9Replace this use of System.out or System.err by a logger.(ÇìÈ¾8Â¯±¥”.
+^
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ÕÙÎŠ8Â¯±¥”.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(»ÄÓ88Åù¦Ë’.
+Z	java:S106$"9Replace this use of System.out or System.err by a logger.(Îîéıÿÿÿÿ8Â¯±¥”.
+M
+java:S1128"+Remove this unused import 'io.vavr.Tuple2'.(¬µáèşÿÿÿÿ8Â¯±¥”.
+Z	java:S106)"9Replace this use of System.out or System.err by a logger.(°—æ™ùÿÿÿÿ8Â¯±¥”.
+U	java:S106!"9Replace this use of System.out or System.err by a logger.(—¾ˆü8Â¯±¥”.
+E
+java:S1068"(Remove this unused "test" private field.(ŠÇëÜ8Ï¤ôÚ‘.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(­ˆÁf8Â¯±¥”.
+U	java:S106"9Replace this use of System.out or System.err by a logger.(ÍÎÉ 8Â¯±¥”.
+J
+java:S1481"-Remove this unused "executor" local variable.(ø’†¯8ø†Àé‘.
+T	java:S106"9Replace this use of System.out or System.err by a logger.(»ÄÓ88å±ÎÍ’.
+D
+java:S1068"'Remove this unused "abc" private field.(¢©“ª8Ï¤ôÚ‘.
+Z	java:S106%"9Replace this use of System.out or System.err by a logger.(×áö”ùÿÿÿÿ8Â¯±¥”.
+W
+java:S1128"5Remove this unused import 'org.w3c.dom.ranges.Range'.(‡î±´ùÿÿÿÿ8Â¯±¥”.
