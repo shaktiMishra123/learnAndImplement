@@ -1,4 +1,4 @@
-package Shakti;
+package basicStepsInProg;
 
 public interface Player {
   public String moveStyle(String style);

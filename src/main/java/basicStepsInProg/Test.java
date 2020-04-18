@@ -1,4 +1,4 @@
-package Shakti;
+package basicStepsInProg;
 
 public class Test {
 

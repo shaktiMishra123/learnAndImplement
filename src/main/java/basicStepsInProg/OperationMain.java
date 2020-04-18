@@ -1,4 +1,4 @@
-package Shakti;
+package basicStepsInProg;
 
 import java.util.Arrays;
 import java.util.HashMap;
