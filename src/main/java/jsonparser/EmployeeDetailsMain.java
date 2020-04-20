@@ -12,7 +12,7 @@ public class EmployeeDetailsMain {
     System.out.println(metadata.getDepartmentName());
     System.out.println(metadata.getEmployeeName());
     System.out.println(metadata.setEmployeeDept("Finance").getDepartmentName());
-    System.out.println(metadata.setEmployeeNameAndDept("Ayushi","Finance"));
+    System.out.println(metadata.setEmployeeNameAndDept("Biman","Finance"));
 
   }
 }

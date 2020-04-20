@@ -6,9 +6,9 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 public  class EmployeeDetails {
 
   public static class Metadata{
-  @JsonProperty("name")  // can be asked to ss
+  @JsonProperty("name")
   private final String employeeName;
-  @JsonProperty("department")  // can be asked to ss
+  @JsonProperty("department")
   private final String departmentName;
 
     @Override
@@ -27,7 +27,7 @@ public  class EmployeeDetails {
       return departmentName;
     }
 
-    @JsonCreator // can be asked to ss
+    @JsonCreator
     public Metadata(@JsonProperty("name") String employeeName, @JsonProperty("department") String departmentName) {
       this.employeeName = employeeName;
       this.departmentName = departmentName;
