@@ -23,8 +23,12 @@ public class Operation{
     return result;
   }
 
-   static Operation getSum(Function<Integer,Integer> intfn){
-    return new Operation(intfn,0,null,null);
+  static Operation getStartingPoint(){
+    return new Operation(null,0,null,null);
+  }
+
+   public Operation getSum(Function<Integer,Integer> intfn){
+    return new Operation(intfn,result,nameMap,friendsList);
    }
 
    public Integer sum(Integer x){
@@ -39,15 +43,15 @@ public class Operation{
     return new Operation(Intfn,result,mapValue,friendsList);
    }
 
-  public Map<String, String> getNameMap() {
+   public Map<String, String> getNameMap() {
     return nameMap;
   }
 
-  public Operation getList(List<String> stringList){
+   public Operation getList(List<String> stringList){
     return new Operation(Intfn,result,nameMap,stringList);
   }
 
-  public List<String> getFriendList(){
+   public List<String> getFriendList(){
     return friendsList;
   }
 }

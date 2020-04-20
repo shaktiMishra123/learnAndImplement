@@ -2,8 +2,10 @@ package basicStepsInProg;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
+import java.util.function.Predicate;
 
 public class Getter implements Function<Integer, Integer>, Consumer<String>,Player {
+
   static Getter getEntry(){
     return new Getter();
   }
@@ -27,4 +29,5 @@ public class Getter implements Function<Integer, Integer>, Consumer<String>,Play
   public String goalHitting(String  value) {
     return value.concat(" very fast");
   }
+
 }
