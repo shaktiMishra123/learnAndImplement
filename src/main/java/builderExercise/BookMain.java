@@ -1,4 +1,4 @@
-package Exercise1;
+package builderExercise;
 
 public class BookMain {
   public static void main(String[] args) {

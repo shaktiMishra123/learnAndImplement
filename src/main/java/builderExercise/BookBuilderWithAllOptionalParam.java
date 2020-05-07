@@ -1,4 +1,4 @@
-package Exercise1;
+package builderExercise;
 
 public class BookBuilderWithAllOptionalParam {
   private final String title;
