@@ -6,6 +6,9 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
+import java.io.IOException;
+import java.util.Optional;
+
 import static com.fasterxml.jackson.databind.SerializationFeature.WRITE_DATES_AS_TIMESTAMPS;
 
 public class Node {
@@ -24,8 +27,29 @@ public class Node {
     }
   }
 
+  public static Optional<byte[]> getBinaryPropertyOptional(JsonNode node, String propertyName) {
+    JsonNode property = node.get(propertyName);
+    if (property != null && property.isBinary()) {
+      try {
+        return Optional.of(property.binaryValue());
+      } catch (IOException e) {
+        return Optional.empty();
+      }
+    } else {
+      return Optional.empty();
+    }
+  }
+
   public static ObjectMapper mapper() {
     return MAPPER;
+  }
+
+  public static JsonNode deserialize(String string) {
+    try {
+      return mapper().readTree(string);
+    } catch (IOException e) {
+      throw new RuntimeException(e);
+    }
   }
 
 }
