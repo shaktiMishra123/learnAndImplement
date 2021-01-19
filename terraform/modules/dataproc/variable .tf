@@ -2,7 +2,7 @@
 variable "project" {
   type = string
   description = "The project name"
-  default = "aetna-gcp-devops"
+  default = "gcp-devops"
 }
 variable "location" {
   type = string
