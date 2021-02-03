@@ -1,6 +1,7 @@
 package java8DateTimeLibrary;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 
 public class DateTimeFormatterExample {
@@ -38,6 +39,8 @@ public class DateTimeFormatterExample {
   public static void main(String[] args) {
    parseLocalDate("2017-02-05");
    formatLocalDate();
+
+    //System.out.println(LocalDateTime.parse("2018-11-19T00:00:00.808Z", java.time.format.DateTimeFormatter.ofPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'")));
 
 
   }

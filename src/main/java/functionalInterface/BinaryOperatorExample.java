@@ -1,8 +1,7 @@
 package functionalInterface;
 
 import java.util.Comparator;
-import java.util.function.BinaryOperator;
-import java.util.function.Predicate;
+import java.util.function.*;
 
 public class BinaryOperatorExample {
   static Predicate<Integer> predicate = (a) -> a > 3;
