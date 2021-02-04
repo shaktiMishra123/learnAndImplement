@@ -2,23 +2,21 @@ package LinkedList;
 
 import java.util.HashSet;
 
-public class LinkedList<T> {
+public class LinkedList2<T> {
   Node<T> head;
- // time complexity O(n)
+  Node<T> tail;
+ // time complexity O(1)
   public void addNodeAtEnd(Node<T> node) {
     if (head == null) {
       head = node;
+      tail = node;
     }
     // (head ) [iron,*gold] -> [gold,*silver] -> [silver,*grass] -> {temp}[grass , *brass] -> [brass,null]
     else {
       // (head)  [iron,*gold] ->[gold,*silver] ->  {temp}[silver,*copper] -> [copper,null]
       // (node) [copper,null]
-      Node<T> temp;
-      temp = head;
-      while (temp.nextAddress != null) {
-        temp = temp.nextAddress;
-      }
-      temp.nextAddress = node;
+      tail.nextAddress = node;
+      tail = node;
       //temp.nextAddress.nextAddress.nextAddress = node;
     }
 
@@ -26,7 +24,7 @@ public class LinkedList<T> {
 //time Complexity O(1)
   public void addNodeAtBeginning(Node<T> node){
     if(head == null){
-      head = node;
+      head = tail = node;
     } // (head ){temp} [iron,*gold] -> [gold,*silver] -> [silver,*grass] -> [grass , *brass] -> [brass,null]
     // [copper,null]
     // (head) [copper,*iron] -> [iron,*gold] -> [gold,*silver] -> [silver,*grass] -> [grass , *brass] -> [brass,null]
@@ -43,6 +41,15 @@ public class LinkedList<T> {
     if(head == null){
       System.out.println("No element to Delete");
       return false;
+    }
+    else if(head == tail){
+      if(head.data.equals(value)){
+        head = tail = null;
+        return true;
+      }
+      else {
+        return false;
+      }
     }
     else {
       // [grass , *brass]  --
@@ -78,7 +85,7 @@ public class LinkedList<T> {
     int counter =0;
     while (temp != null){
       if(temp.data.equals(value)) {
-        System.out.println(String.format("found Node at position : %s",counter));
+        System.out.printf("found Node at position : %s%n",counter);
         return temp;
       }
       else {
@@ -86,7 +93,7 @@ public class LinkedList<T> {
       }
       counter++;
     }
-    System.out.println(String.format("No node found for value %s",value));
+    System.out.printf("No node found for value %s%n",value);
     return null;
   }
 
@@ -96,7 +103,6 @@ public class LinkedList<T> {
   //address = [[silver,*copper],[copper,*iron] ]
   // space complexity O(n)
   // time complexity O(n)
-  // Finding a looped linked list
   public boolean isLoopedLinkedList(Node<T> node){
     Node<T> temp=node;
     //List<Node<T>> address = new java.util.LinkedList<Node<T>>();

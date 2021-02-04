@@ -13,6 +13,22 @@ public class ApplcationMain {
     Node grassNode = new Node<String>("grass"); //[grass,null]
     Node brassNode = new Node<String>("brass"); // [brass,null]
 
+    LinkedList<String> list = new LinkedList<String>();
+    list.addNodeAtEnd(goldNode);
+    list.addNodeAtEnd(silverNode);
+    list.addNodeAtEnd(copperNode);
+    list.addNodeAtEnd(ironNode);
+    list.addNodeAtEnd(plasticNode);
+    list.addNodeAtEnd(plasticNode);
+
+   // list.addNodeAtEnd(goldNode);
+
+    //list.printLinkList();
+    //Node<String> goldNode1 =  list.findNode("gold");
+    Node<String> plasticNode1 =  list.findNode("plastic");
+    //list.printFromNode(plasticNode1);
+    list.isLoopedLinkedList(plasticNode1);
+
 
 /*
     ironNode.nextAddress    = silverNode;
@@ -32,6 +48,7 @@ public class ApplcationMain {
     copperNode.nextAddress  = goldNode;
 */
 
+/*
     LinkedList<String> list = new LinkedList();
     list.printLinkList();
     list.addNodeAtEnd(grassNode);
@@ -40,8 +57,9 @@ public class ApplcationMain {
     list.addNodeAtEnd(goldNode);
     list.addNodeAtEnd(ironNode);
     list.addNodeAtEnd(silverNode);
+*/
 
-    list.printLinkList();
+/*    list.printLinkList();
     list.addNodeAtBeginning(copperNode);
     list.printLinkList();
 
@@ -54,7 +72,8 @@ public class ApplcationMain {
     list.printLinkList();
 
 
-    list.findNode("silver");
+    list.findNode("soil");*/
+    //list.isLoopedLinkedList(silverNode);
 
 /*
     list.printFromNode(plasticNode);
