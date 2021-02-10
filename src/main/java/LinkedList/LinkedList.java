@@ -134,4 +134,26 @@ public class LinkedList<T> {
     }
     System.out.println();
   }
+
+  //null(prev) -> (current)[shakti,*Biman] -> (next)[Biman,*Nitesh] -> [Nitesh,*Deepak] -> [Deepak,null] -> null
+  //null(prev) -> [shakti,null] -> [Biman,*Shakti] -> (prev)[Nitesh,*Biman] -> (prev)[Deepak,*Nitesh] -> null(next)(current)
+  //prev = null
+  //
+  //[Deepak,*Nitesh] -> [Nitesh,*Biman] -> [Biman,*Shakti] -> [Shakti,null]
+//Space complexity O(1)
+  //Time complexity O(n)
+  public void reverseLink(){
+    Node<T> current = head;
+    Node<T> next ;
+    Node<T> previous = null ;
+    while (current != null){
+          next = current.nextAddress;
+          current.nextAddress = previous;
+          previous = current;
+          current = next;
+    }
+    head = previous;
+  }
 }
+
+

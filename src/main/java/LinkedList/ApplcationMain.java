@@ -19,7 +19,11 @@ public class ApplcationMain {
     list.addNodeAtEnd(copperNode);
     list.addNodeAtEnd(ironNode);
     list.addNodeAtEnd(plasticNode);
-    list.addNodeAtEnd(plasticNode);
+    //list.addNodeAtEnd(plasticNode);
+
+    list.printLinkList();
+    list.reverseLink();
+    list.printLinkList();
 
    // list.addNodeAtEnd(goldNode);
 
