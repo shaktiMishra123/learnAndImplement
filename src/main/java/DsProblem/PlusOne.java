@@ -2,12 +2,11 @@ package DsProblem;
 
 public class PlusOne {
   public static void main(String[] args) {
-    int[] digits = new int[]{9};
+    int[] digits = new int[]{1,2,9};
     int[] res = plusOne(digits);
     for (int i : res){
       System.out.println(i);
     }
-
   }
 
   public static int[] plusOne(int[] digits) {
