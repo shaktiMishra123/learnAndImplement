@@ -5,7 +5,7 @@ import java.util.Map;
 
 public class MajorityElement {
   public static void main(String[] args) {
-    int[] arr = new  int[]{6,5,5};
+    int[] arr = new  int[]{6,5,5};  // 1,1,1,2,2,3,3,3,3
     int res = majorityElement(arr);
     System.out.println(res);
 
